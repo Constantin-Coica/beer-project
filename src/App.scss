@@ -1,0 +1,71 @@
+body{
+  background-color: aqua;
+}
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-areas: "navigation main"
+  "navigation main";
+  grid-template-columns: 1fr 4fr;
+  background-color: aqua;
+  
+
+  
+
+  &-Nav{
+    display: flex;
+    justify-content: center;
+    grid-area: navigation;
+    min-height: 100vh;
+    border: solid 2px black;
+    padding-top: 10px;
+    background-color: aquamarine;
+    
+    
+  }
+
+  &-Main{
+    grid-area: main;
+    margin-left: 10%;
+    padding-top: 10px;
+    margin-right: 5%;
+    background-color: aqua;
+    
+    
+    
+  }
+}
+
+@media screen and (max-width: 425px){
+
+  .App {
+    text-align: center;
+    display: grid;
+    grid-template-areas: "navigation navigation"
+    "main main";
+    grid-template-columns: 1fr 4fr;
+    background-color: aqua;
+    
+
+    &-Nav{
+      display: flex;
+      justify-content: center;
+      min-height: 10vh;
+      min-width: 100vh;
+      padding-top: 10px;
+      background-color: aquamarine;
+      
+    }
+
+    &-Main{
+      margin-left: 0;
+      margin-right: 0;
+      justify-content: center;
+      min-height: 100vh;
+
+    }
+
+  }
+
+}
+

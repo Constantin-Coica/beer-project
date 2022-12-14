@@ -1,0 +1,26 @@
+.NavBar{
+    
+    margin-top: 10px;
+    position:fixed;
+    
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        
+    }
+    
+    
+}
+
+@media screen and (max-width:425px) {
+    .NavBar{
+        display: flex;
+        gap: 10px;
+
+        .buttons{
+            flex-direction: row;
+        }
+    }
+    
+}
