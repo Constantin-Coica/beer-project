@@ -99,7 +99,7 @@ function App() {
   
 
   return (
-    <div className="App">
+    <div className="App" data-testid = "app">
       <div className='App-Nav'>
         <NavBar filterData={filter} toSearch={searchTerm} onChange={handleNavBarChanges} rangeValue={beerNumber} page={page}/>
       </div>

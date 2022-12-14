@@ -3,7 +3,7 @@ import "./FilterItem.scss"
 const FilterItem = ({description, value, onChange, isChecked, theID}) => {
 
 
-  return (<div className="filterItem">
+  return (<div data-testid = "filteritem" className="filterItem">
     {description}
     <input type="checkbox"
     value={value}

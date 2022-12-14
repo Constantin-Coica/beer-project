@@ -4,7 +4,7 @@ import SearchBar from "../../Components/SearchBar/SearchBar";
 //import RangeInput from "../../Components/RangeInput/RangeInput";
 
 const NavBar = ({filterData, onChange, toSearch, rangeValue, page}) => {
-  return <div className="NavBar">
+  return <div className="NavBar" data-testid = "navbar">
     {/*<RangeInput label={"Number of Beers:"} onChange={onChange} rangeValue ={rangeValue}/>*/}
     <SearchBar  onChange={onChange} toSearch={toSearch} key={"search"} />
     <FiltersList filterData={filterData} onChange={onChange} />
