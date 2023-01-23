@@ -19,7 +19,7 @@ const Card = ({imageURL, name, description, abv, firstBrewed, ph}) => {
 
   return (<div className="beer__card" data-testid = "card" onClick={onClick}>
     <div className="beer__card-container">
-      <img className="beer__card-container-img" src={imageURL} alt={`${name} image`} />
+      <img className="beer__card-container-img" src={imageURL} alt={`${name}`} />
     </div>
     <h2 className="beer__card-header">{name}</h2>
     <p className="beer__card-description">{description}</p>
